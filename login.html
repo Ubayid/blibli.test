@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <style>
+
+        a{
+            text-decoration: none;
+        }
+
+        i{
+            top: 12%;
+            right: 3%;
+            cursor: pointer;
+        }
+
+        .text-alter{
+            font-size: 15px;
+        }
+
+        .login{
+            cursor: not-allowed;
+        }
+
+        .toggle-btn{
+            display: none;
+            z-index: 99;
+        }
+
+    </style>
+
+  </head>
+  <body>
+
+<div class="container d-flex align-items-center justify-content-center min-vh-100">
+    <div class="row m-0 h-100 border border-1 rounded-4 shadow shadow-1 p-5 box-area" style="width: 90%;"> 
+        <div class="img-fluid col me-5 d-flex align-items-center justify-content-center">
+            <img src="img\desktop-login.029808b5.svg" alt="">
+        </div>
+
+        <div class="col h-5 p-0 d-flex align-items-center justify-content-center">
+            <div class=" text-center w-100 px-3 py-1">
+            <div class="right-side">
+                <div class="title pb-3">
+                    <h1 class="text-info fs-2">Masuk ke akunmu</h1>
+                </div>
+
+                <div class="card-container ">
+                <div class="card shadow-sm border border-1 m-0 rounded-4">
+                    <div class="card-body">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="input form-control rounded-3 bg-body-secondary" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput" class="form-label text-body-tertiary">Email/nomor HP</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="password" class="input form-control rounded-3 bg-body-secondary" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword" class="form-label text-body-tertiary">
+                                Kata sandi
+                            </label>
+                            <i class="bi bi-eye-fill position-absolute fs-3 text-body-tertiary" id="show-password"></i>                            
+                        </div>
+
+                        <div class="pt-4">
+                            <h6 class="text-start"><a href="#" class="lupa-sandi text-info">Lupa kata sandi?</a></h6>
+                        </div>
+
+                        <div class="login pt-2">
+                            <a href="#" class="btn btn-login btn-secondary disabled btn-lg rounded-pill fs-5 py-2 text-dark" style="width: 35%;" tabindex="-1" role="button" aria-disabled="true"><span class="fs-6 fw-bold">Masuk</span></a>
+
+                            <div class="toggle-btn">
+                                <a href="#" class="btn btn-login btn-primary btn-lg rounded-pill fs-5 py-2 text-light" style="width: 35%;" tabindex="-1" role="button"><span class="fs-6 fw-bold">Masuk</span></a>
+                            </div>
+                        </div>
+                                 
+                        <div class="alternative pt-3 justify-content-center d-flex">
+                            <div class="HP pe-2"> 
+                                <h6>
+                                    <a href="#" class="text-info text-alter"><i class="bi bi-phone"></i> Masuk dengan nomor HP</a>
+                                </h6>
+                            </div>
+                            <div class="QR ps-2">
+                                <h6>
+                                    <a href="" class="text-info text-alter"><i class="bi bi-qr-code"></i> Masuk dengan QR</a> <span class="badge bg-danger rounded-pill text-center">Baru</span>
+                                </h6>
+                            </div>
+                        </div>
+                                                  
+                    </div>
+                </div>
+
+                <div class=" pt-4 btn-low justify-content-center d-flex">  
+                    <div class="facebook pe-2">              
+                            <a href="#" role="button" class="btn btn-lg border border-1 shadow-sm rounded-4 fs-6 w-100" >
+                                    <img src="img\facebook-logo-2019-removebg-preview.png" style="width: 30px;" class="pe-2">                          
+                                Facebook
+                            </a>
+                    </div>
+
+                    <div class="google ps-2">
+                        <a href="#" role="button" class="btn btn-lg border border-1 shadow-sm rounded-4 fs-6 w-100">
+                                <img class="" style="width: 25px;" src="img\Logo-google-icon-PNG-removebg-preview.png" alt="">
+                            Google                           
+                        </a>  
+                    </div>             
+                </div>
+
+                <h6 class="text-center pt-4 text-body-tertiary">Tidak punya akun? <a href="register.html" class="text-info">Daftar</a></h6>
+            </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- </div> -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <script src="java\log.js"></script>
+  </body>
+</html>
